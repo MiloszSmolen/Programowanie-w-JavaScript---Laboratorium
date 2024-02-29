@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3 - drumkit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="controls">
+          <button id="record">Nagraj</button>
+          <button id="stop">Zatrzymaj</button>
+          <button id="play">Wznów</button>
+        </div>
+        <div class="tracks">
+          <label>          
+            <input type="checkbox" class="trackCheckbox" data-track="1" checked/>Chanel 1</label> <!-- checked - domyślnie zaznaczone -->
+          <label>
+            <input type="checkbox" class="trackCheckbox" data-track="2" />Chanel 2</label>
+          <label>
+            <input type="checkbox" class="trackCheckbox" data-track="3" />Chanel 3</label>
+          <label>
+            <input type="checkbox" class="trackCheckbox" data-track="4" />Chanel 4</label>
+        </div>
+      </div>
+      <div class="sound-container">
+        <div class="sound">
+          <audio src="./sounds/clap.wav" controls id="a1"></audio></div>
+        <div class="sound">
+          <audio src="./sounds/hihat.wav" controls id="a2"></audio></div>
+        <div class="sound">
+          <audio src="./sounds/kick.wav" controls id="a3"></audio></div>
+        <div class="sound">
+          <audio src="./sounds/openhat.wav" controls id="a4"></audio></div>
+        <div class="sound">
+          <audio src="./sounds/boom.wav" controls id="a5"></audio></div>
+        <div class="sound">
+          <audio src="./sounds/ride.wav" controls id="a6"></audio></div>
+        <div class="sound">
+          <audio src="./sounds/snare.wav" controls id="a7"></audio></div>
+        <div class="sound">
+          <audio src="./sounds/tom.wav" controls id="a8"></audio></div>
+        <div class="sound">
+          <audio src="./sounds/tink.wav" controls id="a9"></audio></div>
+      </div>
+    </section>
+    <script src="drumkit.js"></script>
+  </body>
+</html>
