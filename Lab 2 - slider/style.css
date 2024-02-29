@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(112, 221, 221);
+}
+
+#slider {
+    width: 800px;
+    height: 600px;
+    margin: 100px auto 0 auto;
+    overflow: hidden;   
+}
+
+#slider .slides {
+    display: flex;
+}
+
+#PrevBTN, #NextBTN {
+    position: absolute;
+    bottom: 15%;
+    background-color: #f18e1d;
+    color: #000000;
+    padding: 10px 20px;   
+}
+
+#PrevBTN {
+    left: 40%;
+}
+
+#NextBTN {
+    right: 40%;
+}
+
+#Panel {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.PanelBtn {
+    width: 30px;
+    height: 30px;  
+}
