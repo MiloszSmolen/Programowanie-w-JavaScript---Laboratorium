@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8f0fe; /* Light blue background */
+    font-family: Arial, sans-serif; /* Set a base font family */
+  }
+  
+  .input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none; /* Remove default outline */
+  }
+  
+  textarea {
+    height: 150px; /* Increased height for more content */
+  }
+  
+  .noteForm {
+    max-width: 500px; /* Fixed width for consistency */
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notesContainer {
+    max-width: 500px; /* Fixed width for consistency */
+    margin: 2em auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted width for better presentation */
+    gap: 20px;
+  }
+  
+  .delete-btn,
+  .pin-btn {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 4px;
+    background-color: #f5f5f5; /* Light gray background */
+    font-size: 14px;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .delete-btn:hover,
+  .pin-btn:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+    color: #222;
+  }
+  
+  #addNoteForm {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 180px; /* Increased height for better readability */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .note:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Enhanced hover effect */
+  }
+  
+  .noteProperty {
+    display: grid;
+    gap: 5px;
+  }
+  
+  .noteProperty label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .groupProperty {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    cursor: pointer;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db; /* Blue button color */
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  .searchBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  h3 {
+    margin: 10px 0 8px 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .delete-button {
+    cursor: pointer;
+    padding: 5px; /* Reduced padding for icon */
+    background-color
+}
+
+.delete-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #ccc; /* Gray icon color */
+}
+
+.delete-button:hover {
+  color: #999;
+}
+
+/* Dodatkowe style */
+
+.noteTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.noteDate {
+  font-size: 12px;
+  color: #777;
+}
+
+.pinnedNote {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for pinned notes */
+}  
