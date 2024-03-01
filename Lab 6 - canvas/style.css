@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(119, 228, 228) ;
+}
+
+canvas {
+    display: block;
+}
+
+#btn {
+    text-align: center;
+}
