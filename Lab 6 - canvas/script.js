@@ -26,14 +26,6 @@ function draw(timestamp) {
   // oblicza czas od ostatniego wywołania funkcji draw
   let elapsed = timestamp - lastTimestamp;
 
-  if (elapsed > 1000) { // po upływie 1 sekundy zostają wyświetlone FPS
-    document.getElementById("fps").innerText = `FPS: ${Math.round(
-      fpsCounter / (elapsed / 1000)
-    )}`;
-    fpsCounter = 0;
-    lastTimestamp = timestamp; // ustawia aktualny 
-  }
-
   ctx.clearRect(0, 0, canvas.width, canvas.height); //Czyści Canvas
   let drawnBalls = 0;
 
