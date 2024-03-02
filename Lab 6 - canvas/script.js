@@ -62,7 +62,6 @@ function draw(timestamp) {
   }
 
   document.getElementById("ballCount").innerText = `Drawn Balls: ${drawnBalls}`;
-  fpsCounter++;
   // wywołuje funkcję draw z poziomu przeglądarki w rytm odświeżania
   requestAnimationFrame(draw);
 }
